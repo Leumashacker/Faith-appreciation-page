@@ -1,1 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Faith Njeri 💖</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #fff0f6, #e8d9ff);
+      color: #392044;
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      position: relative;
+    }
+
+    .hero {
+      max-width: 800px;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 10vw, 7rem);
+      color: #d63384;
+      margin-bottom: 15px;
+      animation: fadeDown 1.2s ease;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.3rem, 4vw, 2.2rem);
+      margin-bottom: 20px;
+      color: #6f42c1;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      border: none;
+      background: #d63384;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(214, 51, 132, 0.3);
+    }
+
+    .button:hover {
+      background: #b52b70;
+      transform: translateY(-4px);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #6f42c1;
+      margin-bottom: 40px;
+    }
+
+    .message {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 35px;
+      border-radius: 25px;
+      line-height: 1.9;
+      font-size: 1.1rem;
+      box-shadow: 0 10px 30px rgba(80, 30, 100, 0.1);
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(80, 30, 100, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) rotate(1deg);
+    }
+
+    .card span {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .memories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .memories img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(80, 30, 100, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .memories img:hover {
+      transform: scale(1.04);
+    }
+
+    .surprise {
+      text-align: center;
+    }
+
+    #hiddenMessage {
+      display: none;
+      margin-top: 25px;
+      color: #d63384;
+      font-size: 1.4rem;
+      font-weight: bold;
+      animation: fadeUp 0.8s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #392044;
+      color: white;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0.8;
+      }
+
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="hero">
+      <h1>Faith Njeri 💖</h1>
+      <h2>To an amazing bestie</h2>
+      <p>
+        Some people make life brighter simply by being in it.
+        Faith, you are kind, unforgettable, and truly one of a kind.
+      </p>
+
+      <a href="#message" class="button">Read Your Message</a>
+    </div>
+  </header>
+
+  <section id="message">
+    <h2>A Message for You</h2>
+
+    <div class="message">
+      <p>
+        Dear Faith,
+      </p>
+
+      <br />
+
+      <p>
+        Thank you for being such a wonderful friend. Your kindness, laughter,
+        support, and beautiful personality make every moment better.
+        I appreciate all the memories we share and I am grateful to have you
+        in my life.
+      </p>
+
+      <br />
+
+      <p>
+        You are more than a bestie — you are family. Never forget how special,
+        loved, and appreciated you are. 💕
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why You Are Amazing</h2>
+
+    <div class="cards">
+      <div class="card">
+        <span>🌟</span>
+        <h3>Your Kind Heart</h3>
+        <p>You make people feel seen, loved, and valued.</p>
+      </div>
+
+      <div class="card">
+        <span>😂</span>
+        <h3>Your Laughter</h3>
+        <p>You know how to turn ordinary moments into unforgettable memories.</p>
+      </div>
+
+      <div class="card">
+        <span>🤍</span>
+        <h3>Your Support</h3>
+        <p>You always know how to encourage and inspire the people you love.</p>
+      </div>
+
+      <div class="card">
+        <span>💫</span>
+        <h3>Your Uniqueness</h3>
+        <p>There is nobody else quite like you, and that is what makes you special.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Memories 📸</h2>
+
+    <div class="memories">
+      <!-- Replace these image links with your own photos -->
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Friends smiling together" />
+      <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" alt="Friends spending time together" />
+      <img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?auto=format&fit=crop&w=800&q=80" alt="Friends enjoying a beautiful day" />
+    </div>
+  </section>
+
+  <section class="surprise">
+    <h2>A Little Surprise 🎁</h2>
+
+    <button class="button" onclick="showMessage()">
+      Click for a Secret Message
+    </button>
+
+    <p id="hiddenMessage">
+      Faith, you are deeply appreciated today, tomorrow,hadi milele and always! 💖
+    </p>
+  </section>
+
+  <footer>
+    Made with love for Faith Njeri from Thaci💕
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("hiddenMessage").style.display = "block";
+    }
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.textContent = Math.random() > 0.5 ? "💖" : "✨";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 4 + Math.random() * 4 + "s";
+      heart.style.fontSize = 15 + Math.random() * 20 + "px";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 8000);
+    }
+
+    setInterval(createHeart, 700);
+  </script>
+</body>
+    </html>
